@@ -1,0 +1,19 @@
+#first{
+  background-color: aqua;
+  border: 4px solid black;
+}
+
+.bg-blue{
+  background-color: blue;
+  color: white;
+}
+
+p#red{
+  color: red;/*gives color red to all the texts in the paragraph of id red */
+}
+
+*{
+  margin: 10;
+  padding: 10;
+}
+
