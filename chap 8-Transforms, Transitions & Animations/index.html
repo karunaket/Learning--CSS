@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: red;
+      color: white;
+      height: 60vh;
+    }
+
+    .box {
+      border: 6px solid black;
+
+      /*  transform: translate(134px, 56px) rotate(45deg);    /*  rotate(0.25 turn)  */
+
+      transform-origin: 0;
+      /*  transform-origin: center; is default property...while using 0 it 
+          transforms from start....basically transform-origin says from what position we are wanted to transform....like wheather it is from start, end, center, etc.  */
+
+      /* transform: scaleX(2); */
+      /* transform: scaleY(2); */
+
+      /*  transform: scale(2, 3);   /*  Shorthand property for scaling for both  X & Y */
+
+      /* transform: skew(5deg, 10deg); */
+
+      /* transform: matrix(1, 2, 3, 4, 5, 6); */    /*  It takes 6 parameters  */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, architecto quis. Itaque et sequi
+      quos excepturi error eveniet, nam eaque blanditiis illum laudantium deleniti hic vero repellendus sint deserunt
+      tenetur voluptatum similique? Obcaecati, fuga.</div>
+  </div>
+
+</body>
+
+</html>
