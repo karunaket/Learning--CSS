@@ -15,15 +15,18 @@
     .container {
       background-color: red;
       color: white;
-      height: 60vh;
+      height: 70vh;
     }
 
     .box {
       border: 6px solid black;
 
-      /*  transform: translate(134px, 56px) rotate(45deg);    /*  rotate(0.25 turn)  */
+      display: inline-block;
 
-      transform-origin: 0;
+      /*  transform: translate(443px, 126px) rotate(0deg);    /*  rotate(0.25 turn)....we can use 
+                                                                  rotateX,Y & Z even here....  */
+
+      /* transform-origin: 0; */
       /*  transform-origin: center; is default property...while using 0 it 
           transforms from start....basically transform-origin says from what position we are wanted to transform....like wheather it is from start, end, center, etc.  */
 
@@ -35,16 +38,34 @@
       /* transform: skew(5deg, 10deg); */
 
       /* transform: matrix(1, 2, 3, 4, 5, 6); */    /*  It takes 6 parameters  */
+
+      /*  transform: rotateX(52deg);   /*  rotates "_deg" in X-axis  */
+
+      /*  transform: rotateY(52deg);   /*  rotates "_deg" in Y-axis  */
+
+      /*  transform: rotateZ(52deg);  /*  rotates "_deg" in Z-axis i.e. circle  */
     }
+
+    img:hover{
+      width: 300px;
+    }
+
+    img{
+      width: 455px;
+      /* transition-property: width; */
+      transition-duration: 3s;
+      transition-timing-function: ease-in;
+    }
+
   </style>
 </head>
 
 <body>
 
   <div class="container">
-    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, architecto quis. Itaque et sequi
-      quos excepturi error eveniet, nam eaque blanditiis illum laudantium deleniti hic vero repellendus sint deserunt
-      tenetur voluptatum similique? Obcaecati, fuga.</div>
+    <div class="box">
+      <img src="logo.jpg">
+    </div>
   </div>
 
 </body>
